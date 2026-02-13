@@ -5,9 +5,8 @@ class paciente:
         self.cor_pulseira = cor_pulseira
         self.contato = contato
 
+    def cadastro(self):
+        print(f'{self.nome}\n{self.diagnostico}\n{self.cor_pulseira}\n{self.contato}')
 
 paciente_01 = paciente("Lucas", 'Gravido', 'Vermelho', 4740028922)
-print(paciente_01.nome)
-print(paciente_01.diagnostico)
-print(paciente_01.cor_pulseira)
-print(paciente_01.contato)
+paciente.cadastro(paciente_01)
