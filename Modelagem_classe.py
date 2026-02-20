@@ -1,5 +1,5 @@
 '''
-Módulo modelos.py
+Mo1delagem_clase.py
 Definição das classes do sistema.
 
 Criado em: 19/02/2026
@@ -21,3 +21,6 @@ Hospital -> Paciente
     Receitar_Remedios()
 
 '''
+
+class paciente:
+    "Bloco vazio" 
