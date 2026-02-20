@@ -1,4 +1,10 @@
 '''
+Módulo modelos.py
+Definição das classes do sistema.
+
+Criado em: 19/02/2026
+Autor: Ulf Gunnar
+
 Planejamento de como a classe será feita na SA
 
 Hospital -> Paciente 
