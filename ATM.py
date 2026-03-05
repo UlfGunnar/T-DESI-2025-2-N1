@@ -73,6 +73,8 @@ while True:
                         continue
 
                     else:
+                        Deposito = float(Deposito)
+
                         if Deposito <= 0:
                             os.system('cls')
                             print('ERROR! Valor inválido, por favor tente novamente!')
