@@ -24,3 +24,4 @@ Hospital -> Paciente
 
 class paciente:
     "Bloco vazio" 
+
