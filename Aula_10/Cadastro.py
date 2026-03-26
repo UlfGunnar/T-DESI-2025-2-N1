@@ -9,7 +9,6 @@ def Mensagem_erro():
     print(Fore.RED + 'Opção Inválida!')
     time.sleep(2)
 
-Criar_conexao()
 Criar_Tabela()
 
 while True:
@@ -56,7 +55,6 @@ while True:
                 os.system('cls')
                 print(Fore.BLACK + 'Saindo...')
                 time.sleep(1)
-                Sair()
                 break
     
     except ValueError:
