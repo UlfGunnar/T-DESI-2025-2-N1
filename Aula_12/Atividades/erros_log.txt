@@ -1,1 +1,0 @@
-Falha na conexão por unable to open database file
