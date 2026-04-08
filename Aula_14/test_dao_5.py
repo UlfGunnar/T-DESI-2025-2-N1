@@ -25,6 +25,12 @@ class ProdutoDAO:
         linha = cursor.fetchone()
         
         return linha
+    
+    def verificar_quantidade_estoque(self, produto: Produto):
+        if produto.quantidade_estoque <= 0:
+            raise TypeError('Insira valor acima de 0 por favor')
+        return True
+
 
 class Teste_ProdutoDAO(unittest.TestCase):
     def setUp(self):
@@ -47,7 +53,8 @@ class Teste_ProdutoDAO(unittest.TestCase):
         self.assertIsNotNone(Produto_recuperado)
         self.assertEqual(Produto_01.nome, Produto_recuperado[1])
         self.assertEqual(Produto_01.quantidade_estoque, Produto_recuperado[2])
-        
+        self.assertRaises(TypeError, self.dao.verificar_quantidade_estoque)
+
     def tearDown(self):
         self.conexao.close()
 
