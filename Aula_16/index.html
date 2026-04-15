@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Dashboard de Produtos</h1>
+        <h2>Novo Cadastro</h2>
+        
+        <form action="">
+            <div class="form-row">
+                <label for="produto_nome">Produto:</label>
+                <input class="caixa-de-texto" type="text" id="produto_nome" placeholder="Ex: Teclado Mecânico RGB" required>
+            </div>
+
+            <div class="form-row">
+                <label for="produto_preco">Preço (R$):</label>
+                <input class="caixa-de-texto" type="number" name="preco" id="produto_preco" placeholder="0.00" required>
+            </div>
+
+            <div class="form-row">
+                <label for="produto_descricao">Descrição:</label>
+                <textarea class="caixa-de-texto" name="descricao" id="produto_descricao"></textarea>
+            </div>
+
+            <button>Salvar Produto</button>
+        </form>
+
+        <h2>Produtos em Estoque</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <td>id</td>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                    <td>Descrição</td>
+                    <td>Status</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>Garrafa</td>
+                    <td>5.00</td>
+                    <td>Garrafa de água</td>
+                    <td>
+                        <span class="inativo">inativo</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Celular</td>
+                    <td>500.00</td>
+                    <td>Moto G04</td>
+                    <td>
+                        <span class="ativo">Ativo</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>Fone de ouvido</td>
+                    <td>10.00</td>
+                    <td>Fone de ouvido com fio</td>
+                    <td>
+                        <span class="ativo">Ativo</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Mouse</td>
+                    <td>120.00</td>
+                    <td>Mouse Lenovo</td>
+                    <td>
+                        <span class="inativo">Inativo</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
