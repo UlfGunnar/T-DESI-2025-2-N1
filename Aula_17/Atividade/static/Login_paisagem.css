@@ -1,10 +1,4 @@
 /* Configurações para desktop da tela de login */
-
-body {
-    background-image: url('../../Imagens/Fundo_login.jpg');
-    background-position: center top;
-}
-
 header {
     font-size: 30px;
 }
