@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    background-image: url("download.jpg");
+    background-repeat: repeat;
+}
+
+.dashboard-container {
+    background-color: white;
+    width: 70vw;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 30px;
+    border: 1px black solid;
+    box-shadow: 0px 0px 5px black;
+}
+
+h1, h2 {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.caixa-de-texto {
+    outline: none;
+}
+
+.caixa-de-texto:focus {
+    outline: none;
+    border: 1px blue solid;
+    box-shadow: 0px 0px 5px cyan;
+}
+
+input.caixa-de-texto, textarea {
+    padding: 12px 1px;
+}
+
+input.caixa-de-texto:invalid {
+    border: 1px red solid;
+}
+
+input.caixa-de-texto:valid {
+    border: 1px rgba(0, 255, 0, 0.548) solid;
+}
+
+div > form > button {
+    background-color: transparent;
+    border: 1px greenyellow solid;
+}
+
+div > form > button:hover {
+    background-color: green;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+div > textarea {
+    outline: none;
+}
+
+div > textarea:focus {
+    outline: 1px rgb(0, 0, 0) solid;
+}
+
+table { 
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    border: 1px black solid;
+    width: 50vw;
+    height: 60px;
+    padding: 10px;
+}
+
+
+tr:nth-child(even) {
+    background-color: rgba(0, 255, 255, 0.075);
+}
+
+tr:hover {
+    background-color: rgba(255, 217, 0, 0.178);
+    font-weight: bold;
+}
+
+.inativo {
+    border-radius: 10PX;
+    background-color: red;
+    color: white;
+    padding: 1px 10PX;
+
+}
+
+.ativo {
+    background-color: lightgreen;
+    color: white;
+    border-radius: 10PX;
+    padding: 1px 10PX
+}
