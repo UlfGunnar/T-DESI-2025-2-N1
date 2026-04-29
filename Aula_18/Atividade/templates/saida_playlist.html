@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist de músicas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background-color: rgba(127, 255, 212, 0.466);
+        }
+        main {
+            border: 1px black solid;
+            background-color: whitesmoke;
+            padding: 50px;
+            box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.479);
+            border-radius: 10px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        th {
+            background-color: rgb(179, 177, 177);
+        }
+        td, th {
+            border: 1px black solid;
+            padding: 5px;
+        }
+        tr:hover > td{
+            background-color: rgba(0, 255, 255, 0.178);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Playlist de Músicas</h1>
+        
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Artista</th>
+                        <th>Estilo</th>
+                        <th>Duração</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Mussomano Prime - Tô de vôlta</td>
+                        <td>MUSSA</td>
+                        <td>Rap</td>
+                        <td>1:44</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Welcome To The Mato</td>
+                        <td>Marco Brasil Filho</td>
+                        <td>Sertanejo </td>
+                        <td>3:04</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Tenta acreditar</td>
+                        <td>ANAVITORIA</td>
+                        <td>Triste</td>
+                        <td>3:59</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+        
+    </main>
+</body>
+</html>
