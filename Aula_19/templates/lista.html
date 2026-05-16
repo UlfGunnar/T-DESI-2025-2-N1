@@ -15,11 +15,11 @@
             </tr>
         </thead>
         <tbody>
-            {% for i in range(livros|length) %}
+            {% for livro in livros %}
                 <tr>
-                    <td>{{% livros[i]["titulo"] %}}</td>
-                    <td>{{% livros[i]["autor"] %}}</td>
-                    <td>{{% livros[i]["paginas"] %}}</td>
+                    <td>{{ livro["titulo"] }}</td>
+                    <td>{{ livro["autor"] }}</td>
+                    <td>{{ livro["paginas"] }}</td>
                 </tr>
             {% endfor %}
         </tbody>
